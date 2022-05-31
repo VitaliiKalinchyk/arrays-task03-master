@@ -1,4 +1,4 @@
-# Task03
+# Transform Matrix
 
 The purpose of this exercise is to train you to work with arrays.
 
@@ -21,24 +21,12 @@ Input:
 
 ```
 { {2, 3}, {4, 5} }
-```
-
-Output:
-
-```
-[[2, 1], [0, 5]]
-```
-
----
-
-Input:
-
-```
 { { 2, 4, 3, 3 }, { 5, 7, 8, 5 }, { 2, 4, 3, 3 }, { 5, 7, 8, 5 } }
 ```
 
 Output:
 
 ```
+[[2, 1], [0, 5]]
 [[2, 1, 1, 1], [0, 7, 1, 1], [0, 0, 3, 1], [0, 0, 0, 5]]
 ```
