@@ -50,6 +50,18 @@ class Task03Test {
 			Task03.transformMatrix(actual);
 			assertArrayEquals(expected, actual);
 		}
+		{
+			int[][] expected = { { 2, 3 }, { 4, 5 }, { 6, 7 } };
+			int[][] actual = { { 2, 3 }, { 4, 5 }, { 6, 7 } };
+			Task03.transformMatrix(actual);
+			assertArrayEquals(expected, actual);
+		}
+		{
+			int[][] expected = { { 2, 4, 3, 3 }, { 5, 7, 8, 5 }, { 2, 4, 3, 3 } };
+			int[][] actual = { { 2, 4, 3, 3 }, { 5, 7, 8, 5 }, { 2, 4, 3, 3 } };
+			Task03.transformMatrix(actual);
+			assertArrayEquals(expected, actual);
+		}
 	}
 
 	@Test
@@ -119,7 +131,6 @@ class ReplaceCamelCase extends DisplayNameGenerator.Standard {
 	@Override
 	public String generateDisplayNameForMethod(Class<?> testClass, Method testMethod) {
 		return this.replaceCamelCase(testMethod.getName());
-//				+ DisplayNameGenerator.parameterTypesAsString(testMethod);
 	}
 
 	String replaceCamelCase(String camelCase) {

@@ -49,6 +49,18 @@ public class Task03 {
 			transformMatrix(matrix);
 			System.out.println(Arrays.deepToString(matrix));
 		}
+		{
+
+			int[][] matrix = { { 2, 3 }, { 4, 5 }, { 6, 7 } };
+			transformMatrix(matrix);
+			System.out.println(Arrays.deepToString(matrix));
+		}
+		{
+			int[][] matrix = { { 2, 4, 3, 3 }, { 5, 7, 8, 5 }, { 2, 4, 3, 3 } };
+			transformMatrix(matrix);
+			System.out.println(Arrays.deepToString(matrix));
+		}
+
 	}
 
 }
