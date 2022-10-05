@@ -6,7 +6,7 @@ Estimated workload of this exercise is *30 min*.
 
 ### Description
 
-Please, proceed to [Task03](src/main/java/com/epam/rd/autotasks/task03/Task03.java) class
+Please, proceed to [MatrixUtil](src/main/java/com/epam/rd/autotasks/matrix/MatrixUtil.java) class
 and implement its static method:
 
 `void transformMatrix(int[][] matrix)`

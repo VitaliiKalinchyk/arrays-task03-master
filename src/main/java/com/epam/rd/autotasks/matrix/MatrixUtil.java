@@ -1,8 +1,8 @@
-package com.epam.rd.autotasks.task03;
+package com.epam.rd.autotasks.matrix;
 
 import java.util.Arrays;
 
-public class Task03 {
+public class MatrixUtil {
 
 	public static void transformMatrix(int[][] matrix) {
 		// TODO: Implement this method.

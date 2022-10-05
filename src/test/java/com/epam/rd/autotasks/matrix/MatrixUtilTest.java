@@ -1,4 +1,4 @@
-package com.epam.rd.autotasks.task03;
+package com.epam.rd.autotasks.matrix;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
@@ -9,57 +9,59 @@ import org.junit.jupiter.api.DisplayNameGeneration;
 import org.junit.jupiter.api.DisplayNameGenerator;
 import org.junit.jupiter.api.Test;
 
+import com.epam.rd.autotasks.matrix.MatrixUtil;
+
 @DisplayNameGeneration(ReplaceCamelCase.class)
-class Task03Test {
+class MatrixUtilTest {
 
 	@Test
 	void theMatrixIsNotChanged() {
 		{
 			int[][] expected = null;
 			int[][] actual = null;
-			Task03.transformMatrix(actual);
+			MatrixUtil.transformMatrix(actual);
 			assertArrayEquals(expected, actual);
 		}
 		{
 			int[][] expected = {};
 			int[][] actual = {};
-			Task03.transformMatrix(actual);
+			MatrixUtil.transformMatrix(actual);
 			assertArrayEquals(expected, actual);
 		}
 		{
 			int[][] expected = { {} };
 			int[][] actual = { {} };
-			Task03.transformMatrix(actual);
+			MatrixUtil.transformMatrix(actual);
 			assertArrayEquals(expected, actual);
 		}
 		{
 			int[][] expected = { {}, {} };
 			int[][] actual = { {}, {} };
-			Task03.transformMatrix(actual);
+			MatrixUtil.transformMatrix(actual);
 			assertArrayEquals(expected, actual);
 		}
 		{
 			int[][] expected = { { 2, 3 }, { 4, 5, 6 } };
 			int[][] actual = { { 2, 3 }, { 4, 5, 6 } };
-			Task03.transformMatrix(actual);
+			MatrixUtil.transformMatrix(actual);
 			assertArrayEquals(expected, actual);
 		}
 		{
 			int[][] expected = { { 2, 3 }, { 4, 5 }, {} };
 			int[][] actual = { { 2, 3 }, { 4, 5 }, {} };
-			Task03.transformMatrix(actual);
+			MatrixUtil.transformMatrix(actual);
 			assertArrayEquals(expected, actual);
 		}
 		{
 			int[][] expected = { { 2, 3 }, { 4, 5 }, { 6, 7 } };
 			int[][] actual = { { 2, 3 }, { 4, 5 }, { 6, 7 } };
-			Task03.transformMatrix(actual);
+			MatrixUtil.transformMatrix(actual);
 			assertArrayEquals(expected, actual);
 		}
 		{
 			int[][] expected = { { 2, 4, 3, 3 }, { 5, 7, 8, 5 }, { 2, 4, 3, 3 } };
 			int[][] actual = { { 2, 4, 3, 3 }, { 5, 7, 8, 5 }, { 2, 4, 3, 3 } };
-			Task03.transformMatrix(actual);
+			MatrixUtil.transformMatrix(actual);
 			assertArrayEquals(expected, actual);
 		}
 	}
@@ -69,7 +71,7 @@ class Task03Test {
 		{
 			int[][] expected = new int[2][];
 			int[][] matrix = { { 2, 3 }, { 4, 5 } };
-			Task03.transformMatrix(matrix);
+			MatrixUtil.transformMatrix(matrix);
 			for (int i = 0; i < matrix.length; i++) {
 				expected[i] = new int[i];
 				Arrays.fill(expected[i], 0, i, 0);
@@ -80,7 +82,7 @@ class Task03Test {
 		{
 			int[][] expected = new int[4][];
 			int[][] matrix = { { 2, 4, 3, 3 }, { 5, 7, 8, 5 }, { 2, 4, 3, 3 }, { 5, 7, 8, 5 } };
-			Task03.transformMatrix(matrix);
+			MatrixUtil.transformMatrix(matrix);
 			for (int i = 0; i < matrix.length; i++) {
 				expected[i] = new int[i];
 				Arrays.fill(expected[i], 0, i, 0);
@@ -95,7 +97,7 @@ class Task03Test {
 		{
 			int[][] expected = new int[2][];
 			int[][] matrix = { { 2, 3 }, { 4, 5 } };
-			Task03.transformMatrix(matrix);
+			MatrixUtil.transformMatrix(matrix);
 			for (int i = 0; i < matrix.length; i++) {
 				expected[i] = new int[matrix[i].length - 1 - i];
 				Arrays.fill(expected[i], 0, matrix[i].length - 1 - i, 1);
@@ -106,7 +108,7 @@ class Task03Test {
 		{
 			int[][] expected = new int[4][];
 			int[][] matrix = { { 2, 4, 3, 3 }, { 5, 7, 8, 5 }, { 2, 4, 3, 3 }, { 5, 7, 8, 5 } };
-			Task03.transformMatrix(matrix);
+			MatrixUtil.transformMatrix(matrix);
 			for (int i = 0; i < matrix.length; i++) {
 				expected[i] = new int[matrix[i].length - 1 - i];
 				Arrays.fill(expected[i], 0, matrix[i].length - 1 - i, 1);
